@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const ContainerCarrinho = styled.div`
     display: flex;
-    width: 50%;
-    min-width: 500px;
-    max-width: 800px;
+    width: 100px;
+    min-width: 300px;
+    max-width: 300px;
     min-height: 250px;
     position: absolute;
     top: 11vh;
@@ -24,22 +24,6 @@ export const ContainerCarrinho = styled.div`
         right: 0rem;
         min-width: 100%;
         padding: .1rem;
-
-    }
-`
-
-export const InfoCarrinho =styled.div`
-    display: flex;
-    padding: .5rem 0;
-    width: 90%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 5px 5px 10px grey;
-
-    @media (max-width: 550px){
-        width: 90%;
-        
     }
 `
 
@@ -54,10 +38,4 @@ export const BtnCheckOut = styled.button`
     font-weight: 700;
     color: white;
     border-radius: 1rem;
-`
-
-export const ContainerBtns = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 1rem;
 `

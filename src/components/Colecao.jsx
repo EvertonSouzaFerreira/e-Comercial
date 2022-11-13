@@ -9,7 +9,7 @@ function Colecao(props) {
   const [ordenar, setOrdenar] = useState('')
   const [valor, setValor] = useState('')
 
-  console.log(props);
+  
   const showItem = ([sapato]) => {
     props.setSneakers([sapato])
     props.setImagem(sapato.imgP1)
@@ -28,8 +28,8 @@ function Colecao(props) {
       <label htmlFor="busca">Maior Valor pra o Menor:</label>
       <select onChange={handleValor} name="busca" id="busca">
       <option value="">.........</option>
-        <option value="maiorValor">Maior Valor</option>
-        <option value="menorValor">Menor Valor</option>
+        <option value="maiorValor">Menor Valor</option>
+        <option value="menorValor">Maior Valor</option>
       </select>
       <label htmlFor="alfabetica">Ordem Alfabética:</label>
       <select onChange={handleOrdenar} name="alfabetica" id="busca">

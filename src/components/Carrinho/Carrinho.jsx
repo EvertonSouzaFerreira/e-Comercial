@@ -1,7 +1,7 @@
 import React from 'react'
 import { RiDeleteBinFill } from 'react-icons/ri';
 
-import {ContainerCarrinho, InfoCarrinho, BtnCheckOut} from "../Carrinho/styleCarrinho"
+import {ContainerCarrinho, InfoCarrinho, BtnCheckOut, ContainerBtns} from "../Carrinho/styleCarrinho"
 
 function Carrinho(props) {
 
@@ -59,9 +59,11 @@ const addAmount = (it) => {
             
           })}
             
-       
-        <BtnCheckOut onClick={props.hideCartHandler}>Close</BtnCheckOut>
-
+          <ContainerBtns>
+            <BtnCheckOut onClick={props.hideCartHandler}>Close</BtnCheckOut>
+            <BtnCheckOut onClick={props.handleResumo}>Checkout</BtnCheckOut>
+          </ContainerBtns>
+        
     </ContainerCarrinho>
   )
 }

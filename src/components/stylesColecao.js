@@ -17,12 +17,14 @@ export const ContainerInfo = styled.div`
     padding: 1rem, 0rem;
     max-width: 380px;
     min-width: 200px;
-    height: 60vh;
+    height: 500px;
     gap: 4px;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     box-shadow: 20px 20px 10px grey;
+    
+  
    
 `
 
@@ -32,6 +34,12 @@ export const ContainerPrecoBtn = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: 0rem 1rem;
+
+    @media (max-width: 550px) {
+        padding:0;
+        flex-direction: column;
+        gap: 1rem;
+    }
 `
 
 export const ContainerInput = styled.div`
@@ -41,11 +49,15 @@ export const ContainerInput = styled.div`
         align-items: center;
         justify-content: center;
         padding: 0rem 1rem;
+        @media (max-width: 1000px){
+            flex-direction: column;
+        }
 
 `
 
 export const Input = styled.input`
     width: 30%;
+    min-width: 300px;
     height: 30px;
     background-color: hsl(25, 100%, 94%);
     border-radius: .3rem;
